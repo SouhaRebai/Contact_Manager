@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddContact">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_app2"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:srcCompat="@drawable/contacts" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        style="@style/title_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new contact" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#DDE6EF"
+        android:backgroundTint="#DDE6EF"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/edit_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="First name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edit_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Last name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edit_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Phone number"
+                    android:inputType="phone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="100dp"
+                        android:layout_height="55dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="save"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:id="@+id/btn_discard"
+                        android:layout_width="100dp"
+                        android:layout_height="55dp"
+                        android:layout_weight="1"
+                        android:text="discard"
+                        app:cornerRadius="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

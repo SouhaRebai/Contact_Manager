@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_3"
+    style="@style/layout_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_app_2"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:srcCompat="@drawable/contacts" />
+
+    <TextView
+        android:id="@+id/txt_user"
+        style="@style/title_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Welcome back, user!" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="218dp">
+
+        <LinearLayout
+            android:layout_width="178dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_add"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                app:srcCompat="@drawable/ic_baseline_person_add_24" />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/button_style"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:text="add contact"
+                android:textSize="15dp"
+                app:cornerRadius="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_5"
+            android:layout_width="186dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                app:srcCompat="@drawable/ic_baseline_view_list_24" />
+
+            <Button
+                android:id="@+id/btn_view"
+                style="@style/button_style"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="view contacts"
+                android:textSize="15dp"
+                app:cornerRadius="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

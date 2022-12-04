@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_app4"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:srcCompat="@drawable/contacts" />
+
+    <TextView
+        android:id="@+id/txt_app_name3"
+        style="@style/title_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Contact Manager" />
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="391dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/txt_signup2"
+            style="@style/sub_title_style"
+            android:text="Sign up" />
+
+        <EditText
+            android:id="@+id/edit_mail"
+            style="@style/edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edit_name1"
+            style="@style/edit_text_style"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/edit_pass1"
+            style="@style/edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="bottom"
+            android:ems="10"
+            android:fontFamily="@font/basic"
+            android:gravity="bottom"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_pass2"
+            style="@style/edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_create1"
+                style="@style/button_style"
+                android:text="create"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_cancel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="CANCEL"
+                android:textSize="20dp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
